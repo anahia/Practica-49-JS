@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<!--esta es mi practica 49-->
+
+<head>
+    <title>Practica 49</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <script>
+        var vectus = [];
+        var pam;
+        var f;
+        for (f = 0; f < 10; f++) {
+            pam = parseInt(Math.random() * 1000);
+            vectus.push(pam);
+        }
+        document.write('<br>');
+        document.write('Este es un vector antes de ser borrado.');
+        document.write('<br>');
+        for (f = 0; f < 10; f++) {
+            document.write(vectus[f]);
+        }
+        for (f = 0; f < 10; f = f + 2) {
+            delete vectus[f];
+        }
+        document.write('<br>');
+        document.write('En este vector se borraron las posiciones pares.');
+        document.write('<br>');
+        for (f = 0; f < 10; f++) {
+            document.write(vectus[f]);
+            document.write('<br>');
+
+        }
+    </script>
+
+</body>
+
+</html>
